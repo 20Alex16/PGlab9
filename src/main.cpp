@@ -340,7 +340,7 @@ glm::mat4 computeLightSpaceTrMatrix()
 	const GLfloat near_plane = 0.1f, far_plane = 6.0f;
 	glm::mat4 lightProjection = glm::ortho(-1.0f, 1.0f, -1.0f, 1.0f, near_plane, far_plane);
 
-	glm::mat4 lightSpaceTrMatrix = lightProjection * lightView;
+	glm::mat4 lightSpaceTrMatrix = lightProjection * lightView * glm::rotate(glm::mat4(1.0f), glm::radians(lightAngle), glm::vec3(0.0f, -1.0f, 0.0f));
 
 	return lightSpaceTrMatrix;
 }
