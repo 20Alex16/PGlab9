@@ -1,9 +1,9 @@
 # INSTALARE #
 Pentru a rula acest proiect trebuie creat folderul lib si adaugate librariile
--> glew
--> glfw
--> glm
-Ambele se gasesc online. De preferat ultima versiune.
+- glew
+- glfw
+- glm
+Toate se gasesc online. De preferat ultima versiune.
 
 # TESTARE #
 Pentru a constui proiectul, este necesar CMake. Dupa instalarea CMake, programul se poate rula in 2 moduri:
